@@ -112,7 +112,7 @@ class LinkedList:
         return item
 
     def removelast(self):
-        if self._head is self._tail:
+        if self._head.link is None:
             return self.removefirst()
         else:
             currentnode = self._head
